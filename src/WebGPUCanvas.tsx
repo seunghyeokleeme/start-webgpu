@@ -34,6 +34,7 @@ export function WebGPUCanvas() {
         colorAttachments: [{
           view: textureView,
           loadOp: 'clear',
+          clearValue: { r: 0, g: 0.3, b: 0, a: 1 }, // dark green
           storeOp: 'store'
         }]
       };
